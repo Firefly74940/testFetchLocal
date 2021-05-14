@@ -9,7 +9,7 @@ async function CheckUrl_Internal(url) {
 }
 async function CheckUrl(url) {
     const pres = ['', 'http://', 'https://'];
-    const posts = ['', ':80', ':8080', ':4200', ':5000'];
+    const posts = ['', ':80', ':8080', ':4200', ':5000', ':3000'];
     for (const pre of pres) {
         for (const post of posts) {
             CheckUrl_Internal(pre + url + post)
